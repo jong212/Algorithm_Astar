@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             StartCoroutine(pathfinding.FindPath(transform.position, monsterTransform.position));
         }
